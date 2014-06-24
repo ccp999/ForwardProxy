@@ -1,0 +1,18 @@
+{
+  "name": "forwardproxy",
+  "version": "0.0.1",
+  "description": "Forward Proxy for Nodejs",
+  "keywords": ["foward", "middleware", "proxy"],
+  "author": {
+    "name": "Brendan Cheng",
+    "email": "ccp999@gmail.com"
+  },
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccp999/ForwardProxy.git"
+  },
+  "dependencies" : {
+  "http-proxy": "1.1.4"
+  }        
+}
