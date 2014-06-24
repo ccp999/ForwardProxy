@@ -1,9 +1,11 @@
 var http = require('http'),
-    httpProxy = require('http-proxy');
+    httpProxy = require('http-proxy'),
+    port = process.env.OPENSHIFT_NODEJS_PORT || 8000,
+    ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 //
 // Create your proxy server and set the target in the options.
 //
-httpProxy.createProxyServer({target:'http://localhost:9000'}).listen(8000);
+httpProxy.createProxyServer({target:'http://localhost:9000'}).listen(port);
 
 //
 // Create your target server
